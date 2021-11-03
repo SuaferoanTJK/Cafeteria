@@ -1,0 +1,33 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/* Contenido Inicio */
+.contenido-principal,
+.contenido-p-menu{
+    background-color: v.$blanco;
+    padding: 2rem;
+    @include m.tablet{
+        position: relative;
+        padding: 10rem;
+        margin-top: -10rem;
+    }
+}
+.contenido-principal{
+    padding: 2rem;
+    @include m.tablet{
+        padding: 10rem;
+    }
+    .iconos{
+        margin-bottom: v.$separacion;
+    }
+}
+.contenido-p-menu{
+    padding: 2rem 2rem 0 2rem;
+    @include m.tablet{
+        padding: 10rem 10rem 0 10rem;
+    }
+    .imagen{
+        display: flex;
+        align-items: flex-end;
+    }
+}

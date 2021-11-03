@@ -1,0 +1,12 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/* Pág. Interna Menú */
+.contenido-menu{
+    @include m.desktop{
+        @include m.grid(2,v.$separacion);
+    }
+    .texto{
+        padding-bottom: 4rem;
+    }
+}

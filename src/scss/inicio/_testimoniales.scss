@@ -1,0 +1,29 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/* Testimoniales */
+.nuestros-testimoniales{
+    padding: 10rem 2rem;
+    @include m.tablet{
+        padding: 10rem;
+    }
+}
+.grid-testimoniales{
+    @include m.grid(1,2rem);
+    @include m.tablet{
+        @include m.grid(2,2rem);
+    }
+}
+.testimonial{
+    background-color: v.$blanco;
+    padding: 2rem 4rem;
+    max-width: 50rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    .autor{
+        text-align: right;
+        font-size: 2.4rem;
+        color: v.$primario;
+        font-family: v.$fuenteCursiva;
+    }
+}
